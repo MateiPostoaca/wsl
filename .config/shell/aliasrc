@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# skip over sudo for some commands
+for command in apt ; do
+  alias $command="sudo $command"
+done; unset command
+
+# verbosity settings:
+alias \
+  cp="cp -iv" \
+  mv="mv -iv" \
+  rm="rm -vI" \
+  bc="bc -ql" \
+  mkd="mkdir -pv"
+
+# colorize commands:
+alias \
+  ls="ls -hN --color=auto --group-directories-first" \
+  lsa="ls -hAN --color=auto --group-directories-first" \
+  grep="grep --color=auto" \
+  diff="diff --color=auto" \
+  ccat="highlight --out-format=ansi" \
+  ip="ip -color=auto"
