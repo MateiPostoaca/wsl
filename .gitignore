@@ -17,8 +17,6 @@ Pictures/**
 Videos/**
 
 # other junk
-.config/nvim/**
-.config/nvim
 .emacs.d/
 .yarn/**
 .npm/**
